@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+<div class="container">
+
+    <div class="heading">
+        <h1>Welcome To Rock Paper Scissors Game</h1>
+        <p>You vs Computer  </p>
+    </div>
+    
+    <div class="selection">
+        <p>Choose an option</p>
+    </div>
+    <div class="options"> 
+
+
+
+        <button onclick="
+
+           const random = Math.random();
+            let compGuess = '';
+
+
+           if(random>=0 && random<0.33)
+           {
+            compGuess = 'rock'
+           }
+           else if(random>=0.33 && random < 0.66){
+            compGuess = 'paper'
+           }
+           else if(random >= 0.66 && random<1){
+            compGuess = 'scissor'
+           }
+
+           let result = ''
+
+           if(compGuess==='rock'){
+            result = 'Tie !'
+           }
+           else if(compGuess==='paper'){
+            result = 'Computer wins !'
+           }
+           else{
+            result = 'Player wins !'
+           }
+
+
+
+           alert(`Player : rock\nComputer : ${compGuess}\n${result}`)
+
+           
+
+            " >Rock</button>
+
+
+        <button>Paper</button>
+
+
+        <button>Scissor</button>
+
+
+
+    </div>
+</div>
+
+
+
+        <script src="script.js"></script>
+</body>
+</html>

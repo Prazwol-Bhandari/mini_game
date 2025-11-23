@@ -61,7 +61,40 @@
             " >Rock</button>
 
 
-        <button>Paper</button>
+        <button onclick="
+
+            const random = Math.random();
+            let compGuess = '';
+
+
+           if(random>=0 && random<0.33)
+           {
+            compGuess = 'rock'
+           }
+           else if(random>=0.33 && random < 0.66){
+            compGuess = 'paper'
+           }
+           else if(random >= 0.66 && random<1){
+            compGuess = 'scissor'
+           }
+
+           let result = ''
+
+           if(compGuess==='rock'){
+            result = 'Player wins !'
+           }
+           else if(compGuess==='paper'){
+            result = 'Tie !'
+           }
+           else{
+            result = 'Computer wins !'
+           }
+
+
+
+           alert(`Player : rock\nComputer : ${compGuess}\n${result}`)
+        
+        ">Paper</button>
 
 
         <button>Scissor</button>

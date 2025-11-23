@@ -92,12 +92,48 @@
 
 
 
-           alert(`Player : rock\nComputer : ${compGuess}\n${result}`)
+           alert(`Player : paper\nComputer : ${compGuess}\n${result}`)
         
         ">Paper</button>
 
 
-        <button>Scissor</button>
+        <button onclick="
+    
+    
+           const random = Math.random();
+            let compGuess = '';
+
+
+           if(random>=0 && random<0.33)
+           {
+            compGuess = 'rock'
+           }
+           else if(random>=0.33 && random < 0.66){
+            compGuess = 'paper'
+           }
+           else if(random >= 0.66 && random<1){
+            compGuess = 'scissor'
+           }
+
+           let result = ''
+
+           if(compGuess==='rock'){
+            result = 'Computer win !'
+           }
+           else if(compGuess==='paper'){
+            result = 'Player wins !'
+           }
+           else{
+            result = 'Tie!'
+           }
+
+
+
+           alert(`Player : Scissor\nComputer : ${compGuess}\n${result}`)
+        
+        "
+    
+        >Scissor</button>
 
 
 
